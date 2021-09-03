@@ -1,0 +1,50 @@
+Kullanıcıdan bukrs, belnr, ve gjahr alalım, bunlardan belnr optional, diğerleri obligatory olsun.
+EKrana BKPR tablosunu getirelim.
+
+
+
+
+DATA : lt_bkpf TYPE TABLE OF bkpf,
+       go_salv TYPE REF TO cl_salv_table.
+
+PARAMETERS: lp_bukrs TYPE bukrs OBLIGATORY,
+            lp_belnr TYPE belnr_d,
+            lp_gjahr TYPE gjahr OBLIGATORY.
+
+
+
+
+
+START-OF-SELECTION .
+
+
+  IF lp_belnr IS NOT INITIAL.
+
+    SELECT * FROM bkpf
+    INTO TABLE lt_bkpf
+    WHERE bukrs EQ lp_bukrs
+    AND gjahr EQ lp_gjahr
+    AND belnr EQ lp_belnr.
+
+
+  ELSE.
+
+    SELECT * FROM bkpf
+    INTO TABLE lt_bkpf
+    WHERE bukrs EQ lp_bukrs
+    AND gjahr EQ lp_gjahr.
+
+  ENDIF.
+
+
+
+
+  cl_salv_table=>factory(
+
+    IMPORTING
+      r_salv_table   = go_salv
+    CHANGING
+      t_table        = lt_bkpf
+  ).
+
+  go_salv->display( ).
