@@ -1,0 +1,79 @@
+TYPE-POOLS: slis. "SLIS contains all the ALV data types
+
+*&———————————————————————*
+*& Data Declaration
+*&———————————————————————*
+
+DATA: lt_sflight TYPE TABLE OF sflight.
+DATA: lt_fieldcat TYPE slis_t_fieldcat_alv,
+      ls_fieldcat TYPE slis_fieldcat_alv.
+DATA: lt_excluding TYPE slis_t_extab,
+      ls_excluding TYPE slis_extab.
+DATA: g_repid TYPE sy-repid.
+
+*&———————————————————————*
+*& START-OF-SELECTION
+*&———————————————————————*
+START-OF-SELECTION.
+
+  g_repid = sy-repid.
+*&—– Fetch data from the database —–*
+  SELECT *
+  FROM sflight
+  INTO TABLE lt_sflight.
+
+*&—– Field Catalog —–*
+  ls_fieldcat-fieldname = 'CARRID'. "Fieldname in the data table
+  ls_fieldcat-seltext_m = 'Airline'. "Column description in the output
+  APPEND ls_fieldcat TO lt_fieldcat.
+
+  ls_fieldcat-fieldname = 'CONNID'.
+  ls_fieldcat-seltext_m = 'FLight Number'.
+  APPEND ls_fieldcat TO lt_fieldcat.
+
+  ls_fieldcat-fieldname = 'FLDATE'.
+  ls_fieldcat-seltext_m = 'FLight Date'.
+  APPEND ls_fieldcat TO lt_fieldcat.
+
+  ls_fieldcat-fieldname = 'PAYMENTSUM'.
+  ls_fieldcat-seltext_m = 'Total of current bookings'.
+  APPEND ls_fieldcat TO lt_fieldcat.
+
+  ls_fieldcat-fieldname = 'CURRENCY'.
+  ls_fieldcat-seltext_m = 'Currency'.
+  APPEND ls_fieldcat TO lt_fieldcat.
+
+  CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
+    EXPORTING
+      i_callback_program      = sy-repid
+      it_fieldcat             = lt_fieldcat
+      it_excluding            = lt_excluding
+      i_callback_user_command = 'HANDLE_USER_COMMAND'
+    TABLES
+      t_outtab                = lt_sflight.
+
+*&———————————————————————*
+*& Form HANDLE_USER_COMMAND
+*&———————————————————————*
+* Handle user command from ALV report
+*———————————————————————-*
+FORM handle_user_command USING r_ucomm LIKE sy-ucomm "User commands
+rs_selfield TYPE slis_selfield. "Field selected
+
+  DATA: lv_message TYPE c LENGTH 100.
+  CASE r_ucomm.
+    WHEN '&IC1'. "Double-click command
+* Handling when user double click on field.
+      IF rs_selfield-fieldname = 'CARRID'.
+        CLEAR lv_message.
+        CONCATENATE 'You double-clicked on Airline:' rs_selfield-value INTO lv_message SEPARATED BY ' '.
+        MESSAGE lv_message TYPE 'I'.
+
+      ELSEIF rs_selfield-fieldname = 'connid'.
+        CLEAR lv_message.
+        CONCATENATE 'You double-clicked on Flight number:' rs_selfield-value INTO lv_message SEPARATED BY ' '.
+        MESSAGE lv_message TYPE 'I'.
+      ENDIF.
+  ENDCASE.
+
+ENDFORM.
