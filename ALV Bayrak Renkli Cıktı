@@ -1,0 +1,1139 @@
+START-OF-SELECTION.
+
+  TYPES : BEGIN OF t_bayrak,
+            bir       TYPE char10,
+            iki       TYPE char10,
+            uc        TYPE char10,
+            dort      TYPE char10,
+            bes       TYPE char10,
+            alti      TYPE char10,
+            yedi      TYPE char10,
+            sekiz     TYPE char10,
+            dokuz     TYPE char10,
+            on        TYPE char10,
+            onbir     TYPE char10,
+            oniki     TYPE char10,
+            onuc      TYPE char10,
+            ondort    TYPE char10,
+            onbes     TYPE char10,
+            onalti    TYPE char10,
+            onyedi    TYPE char10,
+            cellcolor TYPE lvc_t_scol,
+          END OF t_bayrak.
+
+  DATA : lt_bayrak TYPE STANDARD TABLE OF t_bayrak,
+         ls_bayrak TYPE t_bayrak.
+
+  DATA : it_fieldcat TYPE slis_t_fieldcat_alv,
+         wa_fieldcat TYPE slis_fieldcat_alv.
+
+
+  DATA : gd_layout TYPE slis_layout_alv,
+         gd_repid  LIKE sy-repid.
+
+
+
+
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Beyaz'.
+  ls_bayrak-alti = 'Beyaz'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Beyaz'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Beyaz'.
+  ls_bayrak-bes = 'Beyaz'.
+  ls_bayrak-alti = 'Beyaz'.
+  ls_bayrak-yedi = 'Beyaz'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Beyaz'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Beyaz'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Beyaz'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Beyaz'.
+  ls_bayrak-onuc = 'Beyaz'.
+  ls_bayrak-ondort = 'Beyaz'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 8
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Beyaz'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Beyaz'.
+  ls_bayrak-oniki = 'Beyaz'.
+  ls_bayrak-onuc = 'Beyaz'.
+  ls_bayrak-ondort = 'Beyaz'.
+  ls_bayrak-onbes = 'Beyaz'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+
+* 9
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Beyaz'.
+  ls_bayrak-uc = 'Beyaz'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Beyaz'.
+  ls_bayrak-onbir = 'Beyaz'.
+  ls_bayrak-oniki = 'Beyaz'.
+  ls_bayrak-onuc = 'Beyaz'.
+  ls_bayrak-ondort = 'Beyaz'.
+  ls_bayrak-onbes = 'Beyaz'.
+  ls_bayrak-onalti = 'Beyaz'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 10
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Beyaz'.
+  ls_bayrak-uc = 'Beyaz'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Beyaz'.
+  ls_bayrak-oniki = 'Beyaz'.
+  ls_bayrak-onuc = 'Beyaz'.
+  ls_bayrak-ondort = 'Beyaz'.
+  ls_bayrak-onbes = 'Beyaz'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 11
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Beyaz'.
+  ls_bayrak-uc = 'Beyaz'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Beyaz'.
+  ls_bayrak-onuc = 'Beyaz'.
+  ls_bayrak-ondort = 'Beyaz'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 12
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Beyaz'.
+  ls_bayrak-uc = 'Beyaz'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Beyaz'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Beyaz'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 13
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Beyaz'.
+  ls_bayrak-uc = 'Beyaz'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Beyaz'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Beyaz'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 14
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Beyaz'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Beyaz'.
+  ls_bayrak-oniki = 'Beyaz'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Beyaz'.
+  ls_bayrak-onbes = 'Beyaz'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 15
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Beyaz'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Beyaz'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Beyaz'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Beyaz'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 16
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Beyaz'.
+  ls_bayrak-bes = 'Beyaz'.
+  ls_bayrak-alti = 'Beyaz'.
+  ls_bayrak-yedi = 'Beyaz'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 17
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Beyaz'.
+  ls_bayrak-alti = 'Beyaz'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 18
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 19
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 20
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 21
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 22
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 23
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = 'Kirmizi'.
+  ls_bayrak-iki = 'Kirmizi'.
+  ls_bayrak-uc = 'Kirmizi'.
+  ls_bayrak-dort = 'Kirmizi'.
+  ls_bayrak-bes = 'Kirmizi'.
+  ls_bayrak-alti = 'Kirmizi'.
+  ls_bayrak-yedi = 'Kirmizi'.
+  ls_bayrak-sekiz = 'Kirmizi'.
+  ls_bayrak-dokuz = 'Kirmizi'.
+  ls_bayrak-on = 'Kirmizi'.
+  ls_bayrak-onbir = 'Kirmizi'.
+  ls_bayrak-oniki = 'Kirmizi'.
+  ls_bayrak-onuc = 'Kirmizi'.
+  ls_bayrak-ondort = 'Kirmizi'.
+  ls_bayrak-onbes = 'Kirmizi'.
+  ls_bayrak-onalti = 'Kirmizi'.
+  ls_bayrak-onyedi = 'Kirmizi'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+* 24
+  CLEAR ls_bayrak.
+  ls_bayrak-bir = '*****'.
+  ls_bayrak-iki = '*****'.
+  ls_bayrak-uc = '*****'.
+  ls_bayrak-dort = '*****'.
+  ls_bayrak-bes = '*****'.
+  ls_bayrak-alti = '*****'.
+  ls_bayrak-yedi = '*****'.
+  ls_bayrak-sekiz = '*****'.
+  ls_bayrak-dokuz = '*****'.
+  ls_bayrak-on = '*****'.
+  ls_bayrak-onbir = '*****'.
+  ls_bayrak-oniki = '*****'.
+  ls_bayrak-onuc = '*****'.
+  ls_bayrak-ondort = '*****'.
+  ls_bayrak-onbes = '*****'.
+  ls_bayrak-onalti = '*****'.
+  ls_bayrak-onyedi = '*****'.
+  APPEND ls_bayrak TO lt_bayrak.
+
+
+
+
+
+  wa_fieldcat-fieldname  = 'bir'.    " Fieldname in the data table
+  wa_fieldcat-seltext_m  = 'bir'.    " Column description in the output
+*    wa_fieldcat-emphasize = 3.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'iki'.
+  wa_fieldcat-seltext_m  = 'iki'.
+*  wa_fieldcat-hotspot    = abap_true.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'uc'.
+  wa_fieldcat-seltext_m  = 'uc'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'dort'.
+  wa_fieldcat-seltext_m  = 'dort'.
+*    wa_fieldcat-emphasize = 'C610'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'bes'.
+  wa_fieldcat-seltext_m  = 'bes'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'alti'.
+  wa_fieldcat-seltext_m  = 'alti'.
+*    wa_fieldcat-emphasize = 'C610'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'yedi'.
+  wa_fieldcat-seltext_m  = 'yedi'.
+*    wa_fieldcat-emphasize = 'C610'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'sekiz'.
+  wa_fieldcat-seltext_m  = 'sekiz'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'dokuz'.
+  wa_fieldcat-seltext_m  = 'dokuz'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'on'.
+  wa_fieldcat-seltext_m  = 'on'.
+*    wa_fieldcat-emphasize = 'C610'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'onbir'.
+  wa_fieldcat-seltext_m  = 'onbir'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'oniki'.
+  wa_fieldcat-seltext_m  = 'oniki'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'onuc'.
+  wa_fieldcat-seltext_m  = 'onuc'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'ondort'.
+  wa_fieldcat-seltext_m  = 'ondort'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'onbes'.
+  wa_fieldcat-seltext_m  = 'onbes'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'onalti'.
+  wa_fieldcat-seltext_m  = 'onalti'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+  wa_fieldcat-fieldname  = 'onyedi'.
+  wa_fieldcat-seltext_m  = 'onyedi'.
+  APPEND wa_fieldcat TO it_fieldcat.
+
+
+
+  gd_layout-no_input          = 'X'.
+  gd_layout-colwidth_optimize = 'X'.
+  gd_layout-totals_text       = 'Totals'(301).
+  gd_layout-coltab_fieldname  = 'CELLCOLOR'.  "CTAB_FNAME
+  gd_repid = sy-repid.
+
+
+
+
+  DATA: wa_cellcolor TYPE lvc_s_scol.
+  DATA: ld_index TYPE sy-tabix.
+
+
+* 1
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'bir'.
+
+    IF ls_bayrak-bir EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+*    WA_CELLCOLOR-COLOR-COL = '6'.  "color code 1-7, if outside rage defaults to 7
+*    WA_CELLCOLOR-COLOR-INT = '1'.  "1 = Intensified on, 0 = Intensified off
+*    WA_CELLCOLOR-COLOR-INV = '0'.  "1 = text colour, 0 = background colour
+*    APPEND WA_CELLCOLOR TO ls_bayrak-CELLCOLOR.
+*    MODIFY lt_bayrak from ls_bayrak INDEX ld_index TRANSPORTING CELLCOLOR.
+*   Set colour of NETPR field to color 4 if gt 0
+*    if ls_bayrak-bir EQ 'Kırmızı'.
+*      WA_CELLCOLOR-FNAME = 'bir'.
+*      WA_CELLCOLOR-COLOR-COL = 4.  "color code 1-7, if outside rage defaults to 7
+*      WA_CELLCOLOR-COLOR-INT = '0'.  "1 = Intensified on, 0 = Intensified off
+*      WA_CELLCOLOR-COLOR-INV = '0'.  "1 = text colour, 0 = background colour
+*      APPEND WA_CELLCOLOR TO ls_bayrak-CELLCOLOR.
+*      MODIFY lt_bayrak from ls_bayrak INDEX ld_index TRANSPORTING CELLCOLOR.
+*    endif.
+**   Set colour of AEDAT field text to red(6)
+*    WA_CELLCOLOR-FNAME = 'iki'.
+*    WA_CELLCOLOR-COLOR-COL = 6.  "color code 1-7, if outside rage defaults to 7
+*    WA_CELLCOLOR-COLOR-INT = '0'.  "1 = Intensified on, 0 = Intensified off
+*    WA_CELLCOLOR-COLOR-INV = '1'.  "1 = text colour, 0 = background colour
+*    APPEND WA_CELLCOLOR TO ls_bayrak-CELLCOLOR.
+*    MODIFY lt_bayrak from ls_bayrak INDEX ld_index TRANSPORTING CELLCOLOR.
+  ENDLOOP.
+
+
+* 2
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'iki'.
+
+    IF ls_bayrak-iki EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+
+* 3
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'uc'.
+
+    IF ls_bayrak-uc EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+* 4
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'dort'.
+
+    IF ls_bayrak-dort EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+* 5
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'bes'.
+
+    IF ls_bayrak-bes EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+
+
+* 6
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'alti'.
+
+    IF ls_bayrak-alti EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+
+
+* 7
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'yedi'.
+
+    IF ls_bayrak-yedi EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+
+* 8
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'sekiz'.
+
+    IF ls_bayrak-sekiz EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+
+* 9
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'dokuz'.
+
+    IF ls_bayrak-dokuz EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+* 10
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'on'.
+
+    IF ls_bayrak-on EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+
+* 11
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'onbir'.
+
+    IF ls_bayrak-onbir EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+
+
+* 12
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'oniki'.
+
+    IF ls_bayrak-oniki EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+* 13
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'onuc'.
+
+    IF ls_bayrak-onuc EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+* 14
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'ondort'.
+
+    IF ls_bayrak-ondort EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+
+* 15
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'onbes'.
+
+    IF ls_bayrak-onbes EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+* 16
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'onalti'.
+
+    IF ls_bayrak-onalti EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+
+* 17
+  LOOP AT lt_bayrak INTO ls_bayrak.
+    ld_index = sy-tabix.
+*   Set colour of EBELN field to various colors based on sy-tabix value
+    wa_cellcolor-fname = 'onyedi'.
+
+    IF ls_bayrak-onyedi EQ 'Kirmizi'.
+      wa_cellcolor-color-col = '6'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ELSE.
+
+      wa_cellcolor-color-col = '0'.  "color code 1-7, if outside rage defaults to 7
+      wa_cellcolor-color-int = '1'.  "1 = Intensified on, 0 = Intensified off
+      wa_cellcolor-color-inv = '0'.  "1 = text colour, 0 = background colour
+      APPEND wa_cellcolor TO ls_bayrak-cellcolor.
+      MODIFY lt_bayrak FROM ls_bayrak INDEX ld_index TRANSPORTING cellcolor.
+
+    ENDIF.
+
+  ENDLOOP.
+
+
+  CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
+    EXPORTING
+*     I_INTERFACE_CHECK  = ' '
+*     I_BYPASSING_BUFFER = ' '
+*     I_BUFFER_ACTIVE    = ' '
+      i_callback_program = 'gd_repid'
+*     I_CALLBACK_PF_STATUS_SET          = ' '
+*     I_CALLBACK_USER_COMMAND           = 'USER_COMMAND'
+*     I_CALLBACK_TOP_OF_PAGE            = ' '
+*     I_CALLBACK_HTML_TOP_OF_PAGE       = ' '
+*     I_CALLBACK_HTML_END_OF_LIST       = ' '
+*     I_STRUCTURE_NAME   =
+*     I_BACKGROUND_ID    = ' '
+*     I_GRID_TITLE       =
+*     I_GRID_SETTINGS    =
+      is_layout          = gd_layout
+      it_fieldcat        = it_fieldcat
+*     IT_EXCLUDING       =
+*     IT_SPECIAL_GROUPS  =
+*     IT_SORT            =
+*     IT_FILTER          =
+*     IS_SEL_HIDE        =
+*     I_DEFAULT          = 'X'
+*     I_SAVE             = ' '
+*     IS_VARIANT         =
+*     IT_EVENTS          =
+*     IT_EVENT_EXIT      =
+*     IS_PRINT           =
+*     IS_REPREP_ID       =
+*     I_SCREEN_START_COLUMN             = 0
+*     I_SCREEN_START_LINE               = 0
+*     I_SCREEN_END_COLUMN               = 0
+*     I_SCREEN_END_LINE  = 0
+*     I_HTML_HEIGHT_TOP  = 0
+*     I_HTML_HEIGHT_END  = 0
+*     IT_ALV_GRAPHICS    =
+*     IT_HYPERLINK       =
+*     IT_ADD_FIELDCAT    =
+*     IT_EXCEPT_QINFO    =
+*     IR_SALV_FULLSCREEN_ADAPTER        =
+* IMPORTING
+*     E_EXIT_CAUSED_BY_CALLER           =
+*     ES_EXIT_CAUSED_BY_USER            =
+    TABLES
+      t_outtab           = lt_bayrak
+* EXCEPTIONS
+*     PROGRAM_ERROR      = 1
+*     OTHERS             = 2
+    .
+  IF sy-subrc <> 0.
+* Implement suitable error handling here
+  ENDIF.
